@@ -119,12 +119,14 @@ section{
   font-size: 23px;
   margin-top: 10px;
   margin-bottom: 15px;
+  display: none;
 }
 .box p{
   width: 90%;
   margin: 0 auto;
   font-size: 15px;
   line-height: 20px;
+  display: none;
 }
 
 
