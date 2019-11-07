@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  /* position: relative; */
+
+  font-family: Georgia, 'æ¸¸æ˜Žæœ', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+}
+
+
+
+#header{
+  width: 100%;
+  /* height: 100px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-size: 40px;
+  padding: 30px 0px 30px 0px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+li{
+  margin-left: 20px;
+  font-size: 16px;
+}
+nav{
+  margin-left: 30%;
+}
+
+.menu-box{
+  display: block;
+  cursor:pointer;
+
+
+}
+.menu-box dd{
+  display:none;
+  /* position: fixed; */
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+
+
+
+main{
+  background-image: url(../img/okinawa/IMG_0690.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  opacity: 0.7;
+}
+main p{
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+}
+.plist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.plist p{
+  display: none;
+}
+.focus{
+  font-size: 16px;
+  padding: 5px;
+  width: 12%;
+  color: rgb(158, 158, 158);
+  font-weight: lighter;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sub-text{
+  width: 100%;
+  font-size: 20px;
+  border-top:dotted 3px orange;
+  border-bottom:dotted 3px orange;
+  margin: 20px 10px 10px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+  color: rgb(129, 127, 127);
+}
+
+
+.box{
+  width: 30%;
+  margin-top: 30px;
+  text-align: center;
+}
+.box img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.box h4{
+  font-size: 23px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.box p{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+.scrollTop{
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.scrollTop p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 30px;
+  border-bottom: 1px solid rgb(13, 87, 100);
+}
+
+
+
+footer {
+  height: 130px;
+  border-top: 1px solid white; 
+  background-color: rgb(78, 78, 78);
+}
+.footer-box{
+  display:flex;
+  width: 77%;
+  height: 100%;
+  justify-content: space-around; 
+  align-items: center;
+}
+.footer-icon{
+  color: white;
+  font-size: 30px;
+}
+.footer-text{
+  color: white;
+}
