@@ -65,6 +65,23 @@ $('.box').on('mouseleave',function(){
   });
 
 
+// <!-- 写真スライドショーライブラリcamera-master -->
+jQuery(function(){
+			
+  jQuery('#camera_wrap_4').camera({
+    height: 'auto',
+    loader: 'bar',
+    pagination: false,
+    thumbnails: true,
+    hover: false,
+    opacityOnGrid: false,
+    imagePath: '../images/'
+  });
+
+});
+
+
+
 
 
 // スクロールトップへ行く

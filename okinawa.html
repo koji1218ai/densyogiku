@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/reset.css/reset.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/okinawa.css">
+  <!-- 1 ライブラリ本体の読み込み-->
+  <link rel="stylesheet" href="../Camera-master/css/camera.css">
   <title>Okinawa</title>
 </head>
 
@@ -26,14 +28,15 @@
 
       <input type="text" class="focus" placeholder="キーワードで検索">
 
-      <dl class="menu-box">
-        <i class="fas fa-align-left fa-2x"></i>
-        <dd>About</dd>
-        <dd>Place</dd>
-        <dd>Picture</dd>
-        <dd>Contact</dd>
-      </dl>
+      <i class="fas fa-align-left fa-2x"></i>
     </header>
+
+    <dl class="menu-box">
+      <dd><span>About</span></dd>
+      <dd>Place</dd>
+      <dd>Picture</dd>
+      <dd>Contact</dd>
+    </dl>
 
 
     <main id="mainImg">
@@ -157,22 +160,47 @@
     </section>
 
 
-    <div class="scrollTop">
-      <p>トップページへ</p>
+    <!-- 写真スライドショーライブラリcamera-master -->
+      <div class="fluid_container">
+        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+          <div data-thumb="img/okinawa/IMG_0008.JPG" data-src="img/okinawa/IMG_0008.JPG"></div>
+        </div><!-- #camera_wrap_3 -->
+
+      </div><!-- .fluid_container -->
+
+
+
+
+      <div class="scrollTop">
+        <p>トップページへ</p>
+      </div>
+
+      <footer>
+        <div class="footer-box">
+          <i class="far fa-image footer-icon"></i>
+          <div class="footer-text">
+            Photograph by Ai | Theme: valuble place in the world
+          </div>
+        </div>
+      </footer>
+
     </div>
 
-    <footer>
-      <div class="footer-box">
-        <i class="far fa-image footer-icon"></i>
-        <div class="footer-text">
-          Photograph by Ai | Theme: valuble place in the world
-        </div>
-      </div>
-    </footer>
+    <!-- 1   jQueryの読み込み  -->
+    <script src="../../Camera-master/scripts/jquery.min.js"></script>
+    <!-- 2    ライブラリ本体の読み込み -->
+    <script src="../../Camera-master/scripts/camera.min.js"></script>
+    <script src="../../Camera-master/scripts/jquery.easing.1.3.js"></script>
+    <script src="../../Camera-master/scripts/jquery.mobile.customized.min.js"></script> 
 
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/okionawa.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/okionawa.js"></script>
 </body>
 
 </html>

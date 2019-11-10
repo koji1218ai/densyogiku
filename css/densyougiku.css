@@ -10,17 +10,29 @@ main{
   margin: 0 auto;
 }
 
-img{
-  width: 4.5%;
-  height: 95px;
-  margin-top: 50px;
-  margin-right: 30px;
+.light-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.light{
+  position: relative;
+}
+.light > img{
+  height: 120px;
+  cursor: pointer;
 }
 
 .text{
-  background: black;
+  /* background: black; */
   color: white;
   font-size: 15px;
+  cursor: pointer;
   /* 文字を縦にする方法 */
   writing-mode: vertical-rl;
+  /* 追加されたもの */
+  /* 電球に重ねて配置。あとは微調整で当たり文字を電球に隠す。初めは透明で消しておく */
+  position: absolute;
+  top: 50%;
+  left:49%;
+  opacity: 0;
 }
