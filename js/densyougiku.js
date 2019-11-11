@@ -6,25 +6,25 @@ $(function(){
   let num = $('.light').length;
 
 
-  // ⭐︎  をfor文で回す
   
-  // for(let i = 0,i < 3,i++;){
-
-  // }
-
-
+  
   // ⭐︎   当たりの電球を指定する
   let atari = Math.floor(Math.random() * num);
-
+  
   // ⭐︎   当たりのテキストを作成
   let text = $('<span>')
   .text('当たり！')
   .addClass('text');
-
-  //  ⭐︎textを画面の電球の当たりに追加する。
+  
+  //  ⭐︎ textを画面の電球の当たりに追加する。
   $('.light').eq(atari).append(text);
   
-
+  
+  // 当たりを５個に増やす方法  ⭐︎  をfor文で回す
+  
+  for(let i = 0;i < 2;i++){
+    console.log(atari[i]);
+  }
 
 
   // 電球をクリックした時
