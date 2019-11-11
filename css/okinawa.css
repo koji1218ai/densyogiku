@@ -140,13 +140,16 @@ section{
   color: rgb(129, 127, 127);
 }
 
-/* .opacity0 {
+ /* 文字がスクロールしたら下から現れる設定。 */
+.opacity0 {
   opacity:0;
+  transform:translateY(20px);
 }
-.opacity1{
+.opacity0.opacity1{
   opacity:1;
-  transform:translateY(10px);
-} */
+  transform:translateY(0px);
+  transition: 1000ms;
+}
 
 
 

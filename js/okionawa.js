@@ -46,27 +46,18 @@ $(function(){
 })
 
 // 文字がスクロールしたら下から現れる。
-// 現在値の取得=720
-// const pos = $(".sub-text p").offset();
-// console.log( pos );
-
-// $(window).on('scroll',function(){
-//   // ①今のカーソルの位置を取得
-// let now = $(document).scrollTop();
-// // ②ターゲットの位置を取得
-// let target=$('.sub-text').offset().top;
-// // console.log(target);
-// // ③１と２を比較する
-// if (now = target){
-//   // console.log('hoge');
-//   $(this).addClass('opacity0');
-// // スクロールするとそこまでいく
-//   $('body,html').stop()
-//   // $(this).addClass('opacity1');
-//   $('.sub-text p').slideUp('.opacity1');
-// }
-// });
-// // 文字がスクロールしたら下から現れる終了
+$(window).scroll(function () {
+  $('.opacity0').each(function () {
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+      // ここからスクロールされたときの処理
+      if (scroll > elemPos - windowHeight + 100) {
+          $(this).addClass('opacity1');
+      }
+  });
+});
+ // 文字がスクロールしたら下から現れる終了
 
 
 
