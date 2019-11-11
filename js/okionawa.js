@@ -35,7 +35,7 @@ $(function(){
 
   // 写真からマウスが離れたら、
   $('#mainImg').on('mouseleave',function(){
-    
+
   $('.p1').removeClass('hoge1');
   $('.p2').removeClass('hoge2');
   $('.p3').removeClass('hoge3');
@@ -96,9 +96,6 @@ jQuery(function(){
   });
 
 });
-
-
-
 
 
 // ⑦スクロールトップへ行く
