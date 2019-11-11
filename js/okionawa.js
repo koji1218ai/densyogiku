@@ -45,11 +45,34 @@ $(function(){
 })
 })
 
+// 文字がスクロールしたら下から現れる。
+// 現在値の取得=720
+// const pos = $(".sub-text p").offset();
+// console.log( pos );
+
+// $(window).on('scroll',function(){
+//   // ①今のカーソルの位置を取得
+// let now = $(document).scrollTop();
+// // ②ターゲットの位置を取得
+// let target=$('.sub-text').offset().top;
+// // console.log(target);
+// // ③１と２を比較する
+// if (now = target){
+//   // console.log('hoge');
+//   $(this).addClass('opacity0');
+// // スクロールするとそこまでいく
+//   $('body,html').stop()
+//   // $(this).addClass('opacity1');
+//   $('.sub-text p').slideUp('.opacity1');
+// }
+// });
+// // 文字がスクロールしたら下から現れる終了
+
+
 
 
 
 // この１個の！写真をホバーしたら文字が出てくる
-
 // mauseoverはマウスが当たっている間中ずっと動作が繰り返されてしまう。
 // mouseenterならマウスが当たっている間は１つの動作として処理してくれる。
 $('.box').on('mouseenter',function(){
@@ -67,7 +90,6 @@ $('.box').on('mouseleave',function(){
 
 // <!-- 写真スライドショーライブラリcamera-master -->
 jQuery(function(){
-			
   jQuery('#camera_wrap_4').camera({
     height: 'auto',
     loader: 'bar',

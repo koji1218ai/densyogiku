@@ -30,16 +30,27 @@ li{
 nav{
   margin-left: 30%;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+
 
 /* メニューバーのアイコン */
 i {
   display: block;
   cursor:pointer;
 }
+.menu-box{
+  width: 100px;
+  cursor: pointer;
+}
 .menu-box dd{
-  display:none;
+  /* display:none; */
   border: 1px solid black;
+  background-color: white;
   padding: 5px 10px;
+  display: none;
 }
 
 
@@ -110,8 +121,6 @@ main p{
 }
 
 
-
-
 section{
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +139,16 @@ section{
   line-height: 30px;
   color: rgb(129, 127, 127);
 }
+
+/* .opacity0 {
+  opacity:0;
+}
+.opacity1{
+  opacity:1;
+  transform:translateY(10px);
+} */
+
+
 
 
 .box{
@@ -160,68 +179,47 @@ section{
 
 
 /*   <!-- 写真スライドショーライブラリcamera-master --> */
-html,body {
+.big-container {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
-a {
-  color: #09f;
-}
-a:hover {
-  text-decoration: none;
-}
-#back_to_camera {
-  background: rgba(255,255,255,.9);
-  clear: both;
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-}
 
 .fluid_container {
-  bottom: 0;
-  /* height: 400px;  */
-  /* background: pink;  */
+  /* bottom: 0; */
   width: 100%;
-  left: 0;
+  height: 600px;
+  /* left: 0;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 0;
+  z-index: 0; */
 }
 #camera_wrap_4 {
-  bottom: 0;
+  /* bottom: 0; */
   height: 100%;
-  left: 0;
-  margin-bottom: 0!important;
-  position: fixed;
-  right: 0;
-  top: 0;
+  width: 100%;
+  padding-top: 50px;
+  /* left: 0; */
+  /* margin-bottom: 0!important; */
+  /* position: fixed; */
+  /* right: 0; */
+  /* top: 0; */
 }
 .camera_bar {
   z-index: 2;
-}
-.camera_thumbs {
-  margin-top: -100px;
-  position: relative;
-  z-index: 1;
 }
 .camera_thumbs_cont {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-}
-.camera_overlayer {
-  opacity: .1;
+  background: gray;
 }
 
 .camera_thumb{
   width:100px;
-}
+} 
 
 /* ディベロッパーツールでこのoverLayに気づけたら、シャドーがかかっているstyleを消すことができる。 */
 .camera_overlayer{
@@ -234,6 +232,7 @@ a:hover {
 
 .scrollTop{
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;

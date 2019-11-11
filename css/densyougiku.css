@@ -13,12 +13,15 @@ main{
 .light-list{
   display: flex;
   flex-wrap: wrap;
+  padding-top: 80px;
 }
 .light{
   position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 .light > img{
-  height: 120px;
+  height: 130px;
   cursor: pointer;
 }
 

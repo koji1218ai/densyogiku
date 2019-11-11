@@ -15,12 +15,12 @@ $(function(){
 
   //  textを画面の電球の当たりに追加する。
   $('.light').eq(atari).append(text);
-
+  
   // 電球をクリックした時
   // 何番目がクリックされたのかの確認(index)
-$('.light').on('click',function(){
-  let index = $('.light').index(this);
-
+  $('.light').on('click',function(){
+    let index = $('.light').index(this);
+    
   // もしクリックされた電球が当たりだったら
   if (index === atari){
     // 電球の写真部分が消える＝透明になる
