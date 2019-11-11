@@ -1,12 +1,12 @@
 $(function(){
-  // icon押したら、menuが出てくる
+  // ①icon押したら、menuが出てくる
 $('.menu-box i').on('click',function(){
   $(this).siblings().slideToggle();
 })
 });
 
 
-// 検索欄に入力したら文字が赤になる
+// ②検索欄に入力したら文字が赤になる
 $(function(){
 $('.focus').on('click',function(){
   $(this).css('color','red');
@@ -14,7 +14,7 @@ $('.focus').on('click',function(){
 });
 
 
-// main写真の文字が消えたり出たりする.
+// ③main写真の文字が消えたり出たりする.
 $(function(){
   // 写真をクリックした時、
   $('#mainImg').on('mouseover',function(){
@@ -45,7 +45,10 @@ $(function(){
 })
 })
 
-// 文字がスクロールしたら下から現れる。
+
+
+
+// ④文字がスクロールしたら下から現れる。
 $(window).scroll(function () {
   $('.opacity0').each(function () {
       var elemPos = $(this).offset().top,
@@ -63,7 +66,7 @@ $(window).scroll(function () {
 
 
 
-// この１個の！写真をホバーしたら文字が出てくる
+// ⑤この１個の！写真をホバーしたら文字が出てくる
 // mauseoverはマウスが当たっている間中ずっと動作が繰り返されてしまう。
 // mouseenterならマウスが当たっている間は１つの動作として処理してくれる。
 $('.box').on('mouseenter',function(){
@@ -79,7 +82,7 @@ $('.box').on('mouseleave',function(){
   });
 
 
-// <!-- 写真スライドショーライブラリcamera-master -->
+// ⑥写真スライドショーライブラリcamera-master 
 jQuery(function(){
   jQuery('#camera_wrap_4').camera({
     height: 'auto',
@@ -97,7 +100,7 @@ jQuery(function(){
 
 
 
-// スクロールトップへ行く
+// ⑦スクロールトップへ行く
 $('.scrollTop').on('click',function(){
   $('body,html').animate({scrollTop:0},800);
 });
