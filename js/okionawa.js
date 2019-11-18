@@ -52,11 +52,11 @@ $(function(){
 // ④文字がスクロールしたら下から現れる。
 $(window).scroll(function () {
   $('.opacity0').each(function () {
-      var elemPos = $(this).offset().top,
+      var subtext = $(this).offset().top,
           scroll = $(window).scrollTop(),
           windowHeight = $(window).height();
       // ここからスクロールされたときの処理
-      if (scroll > elemPos - windowHeight + 100) {
+      if (scroll > subtext - windowHeight + 100) {
           $(this).addClass('opacity1');
       }
   });
