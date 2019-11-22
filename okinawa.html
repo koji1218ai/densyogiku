@@ -9,7 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- 1 ライブラリ本体の読み込み-->
   <link rel="stylesheet" href="./Camera-master/css/camera.css">
-  <!-- 自分のん -->
+  <!-- 自分の読み込み -->
   <link rel="stylesheet" href="./css/okinawa.css">
   <title>Okinawa</title>
 </head>
@@ -21,8 +21,10 @@
       <nav>
         <ul class="menu">
           <li>About</li>
-          <a href="hokkaido.html"><li>Place</li></a>
-          <li><a href="#pic">Picture</a></li>
+          <li>Place</li>
+          <a href="#pic">
+            <li>Picture</li>
+          </a>
           <li>Contact</li>
         </ul>
       </nav>
@@ -30,13 +32,13 @@
       <input type="text" class="focus" placeholder="キーワードで検索">
 
       <!-- ①アイコン -->
-    <dl class="menu-box">
-      <i class="fas fa-align-left fa-2x"></i>
-      <dd>About</dd>
-      <dd><a href="hokkaido.html">Place</a></dd>
-      <dd><a href="#pic">Picture</a></dd>
-      <dd>Contact</dd>
-    </dl>
+      <dl class="menu-box">
+        <i class="fas fa-align-left fa-2x"></i>
+        <dd>About</dd>
+        <dd>Place</dd>
+        <dd><a href="#pic">Picture</a></dd>
+        <dd>Contact</dd>
+      </dl>
     </header>
 
 
@@ -60,10 +62,13 @@
         タイ米でできた泡盛やアグー豚などがあります。</p>
     </div>
 
-    <section>
 
+    <section>
       <div class="box">
-        <a href="densyougiku.html"><img src="img/okinawa/IMG_0008.JPG" alt="" class="active"></a>
+        <div class="text">ゲームをやってみよう！この写真をクリック★</div>
+        <a href="densyougiku.html">
+          <img src="img/okinawa/IMG_0008.JPG" alt="" class="active">
+        </a>
         <div class="box-text">
           <h4>電照菊</h4>
           <p>人工的に光をあてることにより、<br>
@@ -185,31 +190,31 @@
 
 
 
-      <div class="scrollTop">
-        <p>トップページへ</p>
-      </div>
-
-      <footer>
-        <div class="footer-box">
-          <i class="far fa-image footer-icon"></i>
-          <div class="footer-text">
-            Photograph by Ai | Theme: valuble place in the world
-          </div>
-        </div>
-      </footer>
-
+    <div class="scrollTop top-btn">
+      <p>トップページへ</p>
+      <i class="fas fa-fighter-jet tbtn-icon"></i>
     </div>
 
-    <!-- 1   jQueryの読み込み  -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="./Camera-master/scripts/jquery.min.js"></script>
-    <!-- 2    ライブラリ本体の読み込み -->
-    <script src="./Camera-master/scripts/camera.min.js"></script>
-    <script src="./Camera-master/scripts/jquery.easing.1.3.js"></script>
-    <script src="./Camera-master/scripts/jquery.mobile.customized.min.js"></script> 
-    
-    
-    <script src="js/okionawa.js"></script>
+    <footer>
+      <div class="footer-box">
+        <a href="#pic"><i class="far fa-image footer-icon"></i></a>
+        <div class="footer-text">
+          Photograph by Ai | Theme: valuable place in the world
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 1   jQueryの読み込み  -->
+  <script src="./Camera-master/scripts/jquery.min.js"></script>
+  <!-- 2    ライブラリ本体の読み込み -->
+  <script src="./Camera-master/scripts/camera.min.js"></script>
+  <script src="./Camera-master/scripts/jquery.easing.1.3.js"></script>
+  <script src="./Camera-master/scripts/jquery.mobile.customized.min.js"></script>
+
+
+  <script src="js/okinawa.js"></script>
 </body>
 
 </html>

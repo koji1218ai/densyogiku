@@ -1,31 +1,42 @@
 @charset "UTF-8";
 
-.container{
+.container {
   width: 100%;
-  height:  1000px;
+  height:  100vh;
   background-color: black;
 }
-main{
+
+
+.title {
+  color: aliceblue;
+  padding: 32px 125px;
+}
+.title p {
+  font-size: 20px;
+}
+
+
+main {
   width: 90%;
   margin: 0 auto;
 }
 
-.light-list{
+.light-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 80px;    
 }
-.light{
+.light {
   position: relative;
   margin-top: 20px;
   margin-left: 38px;
 }
-.light > img{
+.light > img {
   height: 130px;
   cursor: pointer;
 }
 
-.text{
+
+.text {
   /* background: black; */
   color: white;
   font-size: 15px;

@@ -8,32 +8,38 @@
 
 
 
-#header{
+#header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-.title{
+
+.title {
   font-size: 40px;
   padding: 30px 0px 30px 0px;
 }
-.menu{
+
+.menu {
   display: flex;
   justify-content: space-between;
 }
-li{
+
+li {
   margin-left: 20px;
   font-size: 16px;
 }
-nav{
+
+nav {
   margin-left: 30%;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
+
 
 
 /* ①メニューバーのアイコン */
@@ -43,7 +49,8 @@ i {
   margin-bottom: 8px;
   margin-left: -35px;
 }
-.menu-box{
+
+.menu-box {
   width: 100px;
   cursor: pointer;
   position: absolute;
@@ -52,7 +59,8 @@ i {
   /* 重なった時に手前に持ってくる優先順位を決めるもの */
   z-index: 30;
 }
-.menu-box dd{
+
+.menu-box dd {
   border: 1px solid black;
   background-color: white;
   display: none;
@@ -63,32 +71,35 @@ i {
 
 
 
-main{
+
+main {
   background-image: url(../img/okinawa/IMG_0690.JPG);
   background-size: cover;
   width: 100%;
   height: 600px;
   opacity: 0.7;
-  /* position: absolute; */
-  /* z-index: 0; */
 }
-main p{
+
+main p {
   color: black;
   font-size: 30px;
   line-height: 40px;
 }
-.plist{
+
+.plist {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   justify-content: center;
 }
+
 .p2 {
   /* display: none; */
   opacity: 0;
 }
-.focus{
+
+.focus {
   font-size: 16px;
   padding: 5px;
   width: 12%;
@@ -100,44 +111,52 @@ main p{
   
 }
 
+
+
+
 /* メインの写真が押されたら、文字が動作する設定 */
 /* 1こ目 */
-.hoge1{
+.hoge1 {
   transition: 1s all ease;
   opacity: 1;
 }
+
 .ho1 {
   transition: 3s all ease;
   opacity: 0;
 }
 
 /* ２こ目 */
-.hoge2{
+.hoge2 {
   transition: 2s all ease;
   opacity: 1;
 }
+
 .ho2 {
   transition: 2s all ease;
   opacity: 0;
 }
 
 /* ３こ目 */
-.hoge3{
+.hoge3 {
   transition: 3s all ease;
   opacity: 1;
 }
+
 .ho3 {
   transition: 1s all ease;
   opacity: 0;
 }
 
 
-section{
+
+
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.sub-text{
+.sub-text {
   width: 100%;
   font-size: 20px;
   border-top:dotted 3px orange;
@@ -151,12 +170,16 @@ section{
   color: rgb(129, 127, 127);
 }
 
+
+
+
+
  /* 文字がスクロールしたら下から現れる設定。 */
 .opacity0 {
   opacity:0;
   transform:translateY(20px);
 }
-.opacity0.opacity1{
+.opacity0.opacity1 {
   opacity:1;
   transform:translateY(0px);
   transition: 1000ms;
@@ -164,25 +187,32 @@ section{
 
 
 
-
-.box{
+/* 写真をホバーしたら文字が出てくる */
+.box {
   width: 30%;
   margin-top: 30px;
   text-align: center;
 }
-.box img{
+
+.box .text {
+  margin-bottom: 5px;
+}
+
+.box img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
-.box h4{
+
+.box h4 {
   font-size: 23px;
   margin-top: 10px;
   margin-bottom: 15px;
   display: none;
 }
-.box p{
+
+.box p {
   width: 90%;
   margin: 0 auto;
   font-size: 15px;
@@ -192,7 +222,7 @@ section{
 
 
 
-/*   <!-- 写真スライドショーライブラリcamera-master --> */
+/*  写真スライドショーライブラリcamera-master  */
 .big-container {
   height: 100%;
   width: 100%;
@@ -201,29 +231,21 @@ section{
 }
 
 .fluid_container {
-  /* bottom: 0; */
   width: 100%;
   height: 600px;
-  /* left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 0; */
 }
+
 #camera_wrap_4 {
-  /* bottom: 0; */
   height: 100%;
   width: 100%;
   padding-top: 50px;
-  /* left: 0; */
-  /* margin-bottom: 0!important; */
-  /* position: fixed; */
-  /* right: 0; */
-  /* top: 0; */
+  margin-bottom: 115px;
 }
+
 .camera_bar {
   z-index: 2;
 }
+
 .camera_thumbs_cont {
   border-radius: 0;
   -moz-border-radius: 0;
@@ -231,12 +253,12 @@ section{
   background: gray;
 }
 
-.camera_thumb{
+.camera_thumb {
   width:100px;
 } 
 
-/* ディベロッパーツールでこのoverLayに気づけたら、シャドーがかかっているstyleを消すことができる。 */
-.camera_overlayer{
+/* ディベロッパーツールでoverLayのシャドーがかかっている */
+.camera_overlayer {
   display: none;
 }
 /*  ここまで！  写真スライドショーライブラリcamera-master */
@@ -244,20 +266,41 @@ section{
 
 
 
-.scrollTop{
-  height: 80px;
-  width: 100%;
+/* スクロールトップ */
+.scrollTop.top-btn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   cursor: pointer;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 192, 203, 0.726);
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.scrollTop p{
-  font-size: 20px;
+
+.scrollTop p {
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-right: 30px;
   border-bottom: 1px solid rgb(13, 87, 100);
+  border-bottom: none;
+  margin-top: 5px;
 }
+
+.tbtn-icon {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+i {
+  margin: 0px;
+  width: 30px;
+}
+
+
 
 
 
@@ -266,19 +309,125 @@ footer {
   border-top: 1px solid white; 
   background-color: rgb(78, 78, 78);
 }
-.footer-box{
+
+.footer-box {
   display:flex;
   width: 77%;
   height: 100%;
   justify-content: space-around; 
   align-items: center;
 }
-.footer-icon{
+
+.footer-icon {
   color: white;
   font-size: 30px;
 }
-.footer-text{
+
+.footer-text {
   color: white;
 }
 
 
+/* レスポンシブ */
+@media screen and (max-width:1100px){
+  body{
+    width:100%;
+  }
+  .focus{
+    display: none;
+  }
+  .menu-box{
+      display: none;
+  }
+  .sub-text{
+    font-size: 100%;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  body{
+    width:100%;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box{
+    width: 50%;
+  }
+
+  .box-text{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:375px){
+  body{
+    width:100%;
+  }
+
+  header .title {
+    font-size: 25px;
+    width: 10%;
+  }
+  header li {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+
+  main{
+    height: 50vh;
+    background-size: cover;
+  }
+  main p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+
+  .sub-text {
+    font-size: 20%;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    width: 70%;
+  }
+  .box-text{
+    width: 100%;
+  }
+
+
+  .fluid_container {
+    width: 100%;
+    height: 35vh;
+  }
+  .camera_thumbs_cont ul {
+  display: none;
+  }
+  #camera_wrap_4{
+  margin-bottom: 10px;
+  }
+
+  footer{
+    height: 10vh;
+  }
+  .footer-box {
+    width: 90%;
+  }
+  .footer-text {
+  font-size: 7px;
+}
+.footer-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+}

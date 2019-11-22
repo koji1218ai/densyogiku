@@ -29,8 +29,8 @@ $(function(){
 
   // fadeInメソッドはCSSをdisplay:none;にしないと作動しないが、
   // display:none;は要素全体を消してしまうので、
-  // opacity設定をCSSでしてあげる必要がある
-  // $('.p1').fadeIn(1000)、fadeOutは使わない
+  // opacity設定をCSSでしてあげる必要がある。
+  // だから$('.p1').fadeIn(1000)、fadeOutは使わない
   })
 
   // 写真からマウスが離れたら、
@@ -68,11 +68,11 @@ $(window).scroll(function () {
 
 
 // ⑤この１個の！写真をホバーしたら文字が出てくる
-// mauseoverはマウスが当たっている間中ずっと動作が繰り返されてしまう。
+// mouseoverはマウスが当たっている間中ずっと動作が繰り返されてしまう。
 // mouseenterならマウスが当たっている間は１つの動作として処理してくれる。
 $('.box').on('mouseenter',function(){
   $(this)
-  // childredはbox直下のimgにしか使えないので、findを使うと子孫まで取得できる。
+  // childrenはbox直下のimgにしか使えないので、findを使うと子孫まで取得できる。
   .find('h4 , p')
   .slideToggle();
   });
@@ -81,6 +81,9 @@ $('.box').on('mouseleave',function(){
   .find('h4 , p')
   .slideToggle();
   });
+
+
+
 
 
 // ⑥写真スライドショーライブラリcamera-master 
@@ -96,6 +99,8 @@ jQuery(function(){
   });
 
 });
+
+
 
 
 // ⑦スクロールトップへ行く

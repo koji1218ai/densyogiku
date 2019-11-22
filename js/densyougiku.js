@@ -33,7 +33,7 @@ let atariNum = 5;
       
       // 電球をクリックした時
       // 何番目が(どこが)クリックされたのかの確認(index)
-      $('.light').on('mouseover',function(){
+      $('.light').on('click',function(){
         let index = $('.light').index(this);
         
         // もしクリックされた電球が当たりだったら
