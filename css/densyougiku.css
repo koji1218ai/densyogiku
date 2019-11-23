@@ -1,52 +1,51 @@
 @charset "UTF-8";
-
 .container {
-  width: 100%;
-  height:  100vh;
-  background-color: black;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
 }
-
 
 .title {
-  color: aliceblue;
-  padding: 32px 125px;
-}
-.title p {
-  font-size: 20px;
+    color: aliceblue;
+    padding: 32px 125px;
 }
 
+.title p {
+    font-size: 20px;
+}
 
 main {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .light-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.light {
-  position: relative;
-  margin-top: 20px;
-  margin-left: 38px;
-}
-.light > img {
-  height: 130px;
-  cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.light {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 38px;
+}
+
+.light>img {
+    height: 130px;
+    cursor: pointer;
+}
 
 .text {
-  /* background: black; */
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  /* 文字を縦にする方法 */
-  writing-mode: vertical-rl;
-  /* 追加されたもの */
-  /* 電球に重ねて配置。あとは微調整で当たり文字を電球に隠す。初めは透明で消しておく */
-  position: absolute;
-  top: 50%;
-  left:49%;
-  opacity: 0;
+    /* background: black; */
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    /* 文字を縦にする方法 */
+    writing-mode: vertical-rl;
+    /* 追加されたもの */
+    /* 電球に重ねて配置。あとは微調整で当たり文字を電球に隠す。初めは透明で消しておく */
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    opacity: 0;
 }
