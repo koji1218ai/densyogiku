@@ -1,433 +1,422 @@
 @charset "UTF-8";
-
-.container{
-  width: 90%;
-  margin: 0 auto;
-  font-family: Georgia, 'æ¸¸æ˜Žæœ', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Georgia, 'æ¸¸æ˜Žæœ', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
 }
 
-
-
 #header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .title {
-  font-size: 40px;
-  padding: 30px 0px 30px 0px;
+    font-size: 40px;
+    padding: 30px 0px 30px 0px;
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 li {
-  margin-left: 20px;
-  font-size: 16px;
+    margin-left: 20px;
+    font-size: 16px;
 }
 
 nav {
-  margin-left: 30%;
+    margin-left: 30%;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
-
 
 
 /* ①メニューバーのアイコン */
+
 i {
-  display: block;
-  cursor:pointer;
-  margin-bottom: 8px;
-  margin-left: -35px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 8px;
+    margin-left: -35px;
 }
 
 .menu-box {
-  width: 100px;
-  cursor: pointer;
-  position: absolute;
-  right: -30px;
-  top: 34px;
-  /* 重なった時に手前に持ってくる優先順位を決めるもの */
-  z-index: 30;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: 34px;
+    /* 重なった時に手前に持ってくる優先順位を決めるもの */
+    z-index: 30;
 }
 
 .menu-box dd {
-  border: 1px solid black;
-  background-color: white;
-  display: none;
-  padding: 8px 27px;
-  margin-right: 30px;
-  margin-left: -35px;
+    border: 1px solid black;
+    background-color: white;
+    display: none;
+    padding: 8px 27px;
+    margin-right: 30px;
+    margin-left: -35px;
 }
 
-
-
-
 main {
-  background-image: url(../img/okinawa/IMG_0690.JPG);
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  opacity: 0.7;
+    background-image: url(../img/okinawa/IMG_0690.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    opacity: 0.7;
 }
 
 main p {
-  color: black;
-  font-size: 30px;
-  line-height: 40px;
+    color: black;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .plist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 }
 
 .p2 {
-  /* display: none; */
-  opacity: 0;
+    /* display: none; */
+    opacity: 0;
 }
 
 .focus {
-  font-size: 16px;
-  padding: 5px;
-  width: 12%;
-  color: rgb(158, 158, 158);
-  font-weight: lighter;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-right: 138px;
-  
+    font-size: 16px;
+    padding: 5px;
+    width: 12%;
+    color: rgb(158, 158, 158);
+    font-weight: lighter;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 138px;
 }
-
-
 
 
 /* メインの写真が押されたら、文字が動作する設定 */
+
+
 /* 1こ目 */
+
 .hoge1 {
-  transition: 1s all ease;
-  opacity: 1;
+    transition: 1s all ease;
+    opacity: 1;
 }
 
 .ho1 {
-  transition: 3s all ease;
-  opacity: 0;
+    transition: 3s all ease;
+    opacity: 0;
 }
 
+
 /* ２こ目 */
+
 .hoge2 {
-  transition: 2s all ease;
-  opacity: 1;
+    transition: 2s all ease;
+    opacity: 1;
 }
 
 .ho2 {
-  transition: 2s all ease;
-  opacity: 0;
+    transition: 2s all ease;
+    opacity: 0;
 }
 
+
 /* ３こ目 */
+
 .hoge3 {
-  transition: 3s all ease;
-  opacity: 1;
+    transition: 3s all ease;
+    opacity: 1;
 }
 
 .ho3 {
-  transition: 1s all ease;
-  opacity: 0;
+    transition: 1s all ease;
+    opacity: 0;
 }
-
-
-
 
 section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .sub-text {
-  width: 100%;
-  font-size: 20px;
-  border-top:dotted 3px orange;
-  border-bottom:dotted 3px orange;
-  margin: 20px 10px 10px 0px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 30px;
-  color: rgb(129, 127, 127);
+    width: 100%;
+    font-size: 20px;
+    border-top: dotted 3px orange;
+    border-bottom: dotted 3px orange;
+    margin: 20px 10px 10px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    color: rgb(129, 127, 127);
 }
 
 
+/* 文字がスクロールしたら下から現れる設定。 */
 
-
-
- /* 文字がスクロールしたら下から現れる設定。 */
 .opacity0 {
-  opacity:0;
-  transform:translateY(20px);
-}
-.opacity0.opacity1 {
-  opacity:1;
-  transform:translateY(0px);
-  transition: 1000ms;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
+.opacity0.opacity1 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1000ms;
+}
 
 
 /* 写真をホバーしたら文字が出てくる */
+
 .box {
-  width: 30%;
-  margin-top: 30px;
-  text-align: center;
+    width: 30%;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .box .text {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .box img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .box h4 {
-  font-size: 23px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  display: none;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 .box p {
-  width: 90%;
-  margin: 0 auto;
-  font-size: 15px;
-  line-height: 20px;
-  display: none;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 20px;
+    display: none;
 }
-
 
 
 /*  写真スライドショーライブラリcamera-master  */
+
 .big-container {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .fluid_container {
-  width: 100%;
-  height: 600px;
+    width: 100%;
+    height: 600px;
 }
 
 #camera_wrap_4 {
-  height: 100%;
-  width: 100%;
-  padding-top: 50px;
-  margin-bottom: 115px;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 115px;
 }
 
 .camera_bar {
-  z-index: 2;
+    z-index: 2;
 }
 
 .camera_thumbs_cont {
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  background: gray;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background: gray;
 }
 
 .camera_thumb {
-  width:100px;
-} 
+    width: 100px;
+}
+
 
 /* ディベロッパーツールでoverLayのシャドーがかかっている */
+
 .camera_overlayer {
-  display: none;
+    display: none;
 }
+
+
 /*  ここまで！  写真スライドショーライブラリcamera-master */
 
 
-
-
 /* スクロールトップ */
+
 .scrollTop.top-btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  background-color: rgba(255, 192, 203, 0.726);
-  margin-left: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 192, 203, 0.726);
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .scrollTop p {
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid rgb(13, 87, 100);
-  border-bottom: none;
-  margin-top: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(13, 87, 100);
+    border-bottom: none;
+    margin-top: 5px;
 }
 
 .tbtn-icon {
-  font-size: 25px;
-  margin-top: 8px;
+    font-size: 25px;
+    margin-top: 8px;
 }
 
 i {
-  margin: 0px;
-  width: 30px;
+    margin: 0px;
+    width: 30px;
 }
 
-
-
-
-
 footer {
-  height: 130px;
-  border-top: 1px solid white; 
-  background-color: rgb(78, 78, 78);
+    height: 130px;
+    border-top: 1px solid white;
+    background-color: rgb(78, 78, 78);
 }
 
 .footer-box {
-  display:flex;
-  width: 77%;
-  height: 100%;
-  justify-content: space-around; 
-  align-items: center;
+    display: flex;
+    width: 77%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-icon {
-  color: white;
-  font-size: 30px;
+    color: white;
+    font-size: 30px;
 }
 
 .footer-text {
-  color: white;
+    color: white;
 }
 
 
 /* レスポンシブ */
-@media screen and (max-width:1100px){
-  body{
-    width:100%;
-  }
-  .focus{
-    display: none;
-  }
-  .menu-box{
-      display: none;
-  }
-  .sub-text{
-    font-size: 100%;
-  }
+
+@media screen and (max-width:1100px) {
+    body {
+        width: 100%;
+    }
+    .focus {
+        display: none;
+    }
+    .menu-box {
+        display: none;
+    }
+    .sub-text {
+        font-size: 100%;
+    }
 }
 
-
-@media screen and (max-width:600px){
-  body{
-    width:100%;
-  }
-  section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box{
-    width: 50%;
-  }
-
-  .box-text{
-    width: 100%;
-  }
+@media screen and (max-width:600px) {
+    body {
+        width: 100%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    br {
+        display: none;
+    }
+    .sub-text {
+        line-height: 20px;
+    }
+    .box {
+        width: 50%;
+    }
+    .box-text {
+        width: 100%;
+    }
 }
 
-
-@media screen and (max-width:375px){
-  body{
-    width:100%;
-  }
-
-  header .title {
-    font-size: 25px;
-    width: 10%;
-  }
-  header li {
-    margin-left: 10px;
-    font-size: 12px;
-  }
-
-
-  main{
-    height: 50vh;
-    background-size: cover;
-  }
-  main p {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-
-  .sub-text {
-    font-size: 20%;
-  }
-  section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box{
-    width: 70%;
-  }
-  .box-text{
-    width: 100%;
-  }
-
-
-  .fluid_container {
-    width: 100%;
-    height: 35vh;
-  }
-  .camera_thumbs_cont ul {
-  display: none;
-  }
-  #camera_wrap_4{
-  margin-bottom: 10px;
-  }
-
-  footer{
-    height: 10vh;
-  }
-  .footer-box {
-    width: 90%;
-  }
-  .footer-text {
-  font-size: 7px;
-}
-.footer-icon {
-  font-size: 20px;
-  margin-right: 5px;
-}
+@media screen and (max-width:375px) {
+    body {
+        width: 100%;
+    }
+    header .title {
+        font-size: 25px;
+        width: 10%;
+    }
+    header li {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    main {
+        height: 50vh;
+        background-size: cover;
+    }
+    main p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .sub-text {
+        font-size: 20%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 70%;
+    }
+    .box-text {
+        width: 100%;
+    }
+    .fluid_container {
+        width: 100%;
+        height: 35vh;
+    }
+    .camera_thumbs_cont ul {
+        display: none;
+    }
+    #camera_wrap_4 {
+        margin-bottom: 10px;
+    }
+    footer {
+        height: 10vh;
+    }
+    .footer-box {
+        width: 90%;
+    }
+    .footer-text {
+        font-size: 7px;
+    }
+    .footer-icon {
+        font-size: 20px;
+        margin-right: 5px;
+    }
 }
