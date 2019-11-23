@@ -1,62 +1,75 @@
 @charset "UTF-8";
-
 body {
     height: 100vh;
     width: 90%;
     margin: 0 auto;
     font-family: Georgia, 'æ¸¸æ˜Žæœ', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
 }
+
 .title h1 {
     font-size: 35px;
     margin-top: 10px;
 }
+
 header nav {
     width: 30%;
     margin: 20px;
     color: gray;
 }
+
+header li {
+    text-decoration: none;
+    color: gray;
+}
+
 header ul {
     display: flex;
     justify-content: space-between;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     margin: 15px;
 }
+
 header i {
     margin-top: 10px;
 }
-
 
 main img {
     height: 500px;
     width: 100%;
 }
+
 main p {
     font-size: 25px;
     margin-top: 30px;
     color: gray;
     line-height: 50px;
 }
+
 .box {
     display: flex;
     justify-content: space-between;
     margin: 40px;
 }
+
 section img {
     width: 28%;
-
 }
+
 section .box-right {
     width: 60%;
     margin: 20px;
 }
+
 .box h2 {
     font-size: 30px;
     margin-top: 26px;
     margin-bottom: 25px;
 }
+
 .box p {
     font-size: 20px;
     color: gray;
@@ -68,12 +81,64 @@ section .box-right {
     overflow: scroll;
     width: 100%;
 }
+
 .picture img {
     width: 300px;
     height: 220px;
     margin-right: 15px;
 }
 
+
+/* 字のアニメーション */
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn1 {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation: zoomIn 2s;
+}
+
+.zoomIn2 {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation: zoomIn 4s;
+}
+
+.zoomIn3 {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation: zoomIn 6s;
+}
+
+.zoomIn4 {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation: zoomIn 8s;
+}
+
+
+/* アニメここまで */
 
 .sec-footer {
     border: 1px 0px solid gray;
@@ -90,32 +155,39 @@ section .box-right {
 .profile {
     width: 30%;
 }
+
 .prof-box {
     height: 150px;
     display: flex;
 }
+
 .img-left {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-left: 35px;
 }
+
 .img-right {
-    margin-left: 30px; 
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .profile .name {
     font-size: 20px;
 }
+
 .profile .icon {
     display: flex;
     margin-top: 5px;
 }
+
 .profile i {
     margin: 0px 10px 0px 10px;
 }
+
 .profile p {
     color: gray;
     line-height: 25px;
@@ -133,24 +205,29 @@ section .box-right {
     height: 200px;
     margin-top: 30px;
 }
+
 .other {
     width: 15%;
     margin-left: 20px;
 }
+
 .travel h4,
 .Daily h4,
 .other h4 {
     font-size: 18px;
 }
+
 .travel a,
 .Daily a,
 .other a {
     font-size: 18px;
     color: gray;
 }
+
 .travel {
     margin-left: 115px;
 }
+
 .other a {
     border-bottom: 1px solid rgb(119, 118, 118);
     /* width: fit-content; */
@@ -161,78 +238,142 @@ section .box-right {
 footer {
     height: 100px;
 }
-.footer-box{
+
+.footer-box {
     margin-top: 90px;
     display: flex;
 }
+
 footer i {
     font-size: 30px;
     margin-left: 70px;
     color: gray;
 }
+
 footer .icon {
     width: 35%;
 }
 
 a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 @media screen and (max-width:830px) {
-header i {
-    /* fontawesomeのファイルの中に元々display:が入っているので、importantと表示してあげないと反映されない */
-    display: none !important;
+    header i {
+        /* font awesomeのファイルの中に元々display:が入っているので、importantと表示してあげないと反映されない */
+        display: none !important;
+    }
+    header li {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    main p {
+        font-size: 20px;
+    }
+    section .box {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    section img {
+        width: 70%;
+    }
+    .sec-footer {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .profile {
+        width: 100%;
+    }
+    .other {
+        margin: 0px;
+    }
+    .travel,
+    .Daily,
+    .other {
+        width: 100%;
+        height: 140px;
+    }
+    .other p {
+        text-align: center;
+    }
+    .other {
+        margin-top: 15px;
+    }
+    footer i {
+        margin-left: 20px;
+    }
+    footer .icon {
+        width: 15%;
+    }
+    .footer-text {
+        padding-top: 7px;
+    }
+    .travel {
+        margin-left: 0px;
+    }
 }
-header li {
-    font-size: 13px;
-    margin-right: 5px;
-}
-main p {
-    font-size: 20px;
-}
-section .box {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-section img {
-    width: 70%;
-}
-.sec-footer {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.profile {
-    width: 100%;
-}
-.other {
-    margin: 0px;
-}
-.travel,
-.Daily,
-.other {
-    width: 100%;
-    height: 140px;
-}
-.other p {
-    text-align: center;
-}
-.other {
-    margin-top: 15px;
-}
-footer i{
-    margin-left: 20px;
-}
-footer .icon {
-    width: 15%;
-}
-.footer-text {
-    padding-top: 7px;
-}
-.travel {
-    margin-left: 0px;
-}
+
+@media screen and (max-width:375px) {
+    body {
+        width: 90%;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    main img {
+        height: 40vh;
+    }
+    main p {
+        font-size: 8px;
+        margin-top: 0px;
+    }
+    .box p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .box h2 {
+        font-size: 25px;
+        margin-top: 8px;
+        margin-bottom: 13px;
+    }
+    section .box-right {
+        width: 70%;
+        margin: 10px;
+    }
+    .picture img {
+        width: 240px;
+        height: 180px;
+    }
+    .sec-footer {
+        margin-top: 20px;
+        padding: 0px;
+    }
+    .profile p {
+        padding: 3px;
+    }
+    .img-left {
+        margin-top: 6px;
+    }
+    .other {
+        height: 120px;
+    }
+    .travel a,
+    .Daily a,
+    .other a {
+        font-size: 15px;
+    }
+    .footer-box {
+        margin-top: 15px;
+    }
+    .footer-text {
+        font-size: 5px;
+    }
+    footer {
+        height: 60px;
+    }
 }
