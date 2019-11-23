@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -165,8 +166,6 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 auto;
-    /* padding: 20px 10px; */
 }
 
 .sub-text {
@@ -184,15 +183,15 @@ main p {
 }
 
 .box {
-    width: 30%;
     margin-top: 30px;
     text-align: center;
     min-width: 250px;
-    margin: 30px 20px 0px 20px;
+    margin: 30px 8px 0px 8px;
+    cursor: pointer;
 }
 
 .text {
-    margin: 20px 0px 0px 137px;
+    margin: 20px 0px 0px 120px;
     width: 25%;
 }
 
@@ -346,6 +345,9 @@ footer {
     body {
         width: 100%;
     }
+    main {
+        height: 330px;
+    }
     .sub-text br {
         display: none;
     }
@@ -356,6 +358,9 @@ footer {
     }
     .sub-text {
         line-height: 20px;
+    }
+    .text br{
+        display: none;
     }
     .box {
         width: 50%;
@@ -377,6 +382,9 @@ footer {
         margin-left: 10px;
         font-size: 12px;
     }
+    header i{
+        display: none !important;
+    }
     main {
         height: 50vh;
         background-size: cover;
@@ -384,6 +392,10 @@ footer {
     main p {
         font-size: 18px;
         line-height: 30px;
+    }
+    .menu li {
+        margin-left: 5px;
+        font-size: 13px;
     }
     .sub-text {
         font-size: 20%;
