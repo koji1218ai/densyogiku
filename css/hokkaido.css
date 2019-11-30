@@ -32,6 +32,9 @@ header {
     justify-content: space-between;
     margin: 15px;
 }
+header a{
+    color: gray;
+}
 
 header i {
     margin-top: 10px;
