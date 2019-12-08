@@ -33,7 +33,7 @@ let atariNum = 5;
       
       // 電球をクリックした時
       // 何番目が(どこが)クリックされたのかの確認(index)
-      $('.light').on('click',function(){
+      $('.light').on('mouseover',function(){
         let index = $('.light').index(this);
         
         // もしクリックされた電球が当たりだったら
@@ -45,6 +45,8 @@ let atariNum = 5;
           // テキスト（当たり）を表示する。textはspanタグなので
           .find('span').animate({opacity:1},1500);
         } else {
+          $(this).animate({opacity:0},1500);
+          $(this).animate({opacity:1},1500);
           $(this).animate({opacity:0},1500);
           $(this).animate({opacity:1},1500);
         }

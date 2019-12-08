@@ -1,8 +1,9 @@
 @charset "UTF-8";
 .container {
     width: 100%;
-    height: 1000vh;
+    height: 100vh;
     background-color: black;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .title {
@@ -31,22 +32,20 @@ main {
 }
 
 .light>img {
-    height: 130px;
-    width: 20vh;
+    height: 120px;
+    width: 10vh;
     cursor: pointer;
 }
 
 .text {
-    /* background: black; */
     color: white;
     font-size: 15px;
     cursor: pointer;
     /* 文字を縦にする方法 */
     writing-mode: vertical-rl;
-    /* 追加されたもの */
     /* 電球に重ねて配置。あとは微調整で当たり文字を電球に隠す。初めは透明で消しておく */
     position: absolute;
-    top: 50%;
-    left: 49%;
+    top: 42%;
+    left: 51%;
     opacity: 0;
 }
