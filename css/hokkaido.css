@@ -331,12 +331,16 @@ a {
         display: flex;
         flex-direction: column;
     }
+    header nav {
+        margin: 0px -5px 0px 0px;
+    }
     main img {
         height: 40vh;
     }
     main p {
         font-size: 8px;
         margin-top: 0px;
+        line-height: 27px;
     }
     .box p {
         font-size: 10px;
@@ -367,6 +371,10 @@ a {
     }
     .other {
         height: 120px;
+        margin-bottom: 13px;
+    }
+    .other a {
+        border-bottom: none;
     }
     .travel a,
     .Daily a,
@@ -378,6 +386,8 @@ a {
     }
     .footer-text {
         font-size: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
     }
     footer {
         height: 60px;

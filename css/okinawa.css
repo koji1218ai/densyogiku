@@ -403,6 +403,7 @@ footer {
     .text {
         margin: 0 auto;
         width: 53%;
+        padding-left: 24px;
     }
     .box {
         width: 70%;
@@ -413,6 +414,7 @@ footer {
     .box img {
         width: 220px;
         height: 220px;
+        margin: 0px;
     }
     .fluid_container {
         width: 100%;

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: black;
     font-family: 'Noto Serif JP', serif;
 }
@@ -48,4 +48,62 @@ main {
     top: 42%;
     left: 51%;
     opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .title {
+        color: aliceblue;
+        padding: 1px 38px;
+    }
+    .light {
+        margin-top: 3%;
+        margin-left: 0%;
+    }
+    .light>img {
+        height: 70px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .text {
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 18%;
+        left: 56%;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .title {
+        color: aliceblue;
+        padding: 1px 38px;
+    }
+    .light {
+        margin-top: 3%;
+        margin-left: 0%;
+    }
+    .light>img {
+        height: 70px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .text {
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 18%;
+        left: 56%;
+        opacity: 0;
+    }
 }
