@@ -377,6 +377,7 @@ footer {
     header .title {
         font-size: 25px;
         width: 10%;
+        padding: 30px 0px 30px 10px;
     }
     header li {
         margin-left: 10px;
