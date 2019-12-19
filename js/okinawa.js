@@ -81,6 +81,13 @@ $('.box').on('mouseleave', function() {
         .find('h4 , p')
         .slideToggle();
 });
+$('.box').on('click', function() {
+    $(this)
+        // childrenはbox直下のimgにしか使えないので、findを使うと子孫まで取得できる。
+        .find('h4 , p')
+        .slideToggle();
+});
+
 
 
 

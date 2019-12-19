@@ -388,7 +388,7 @@ footer {
     }
     main {
         height: 50vh;
-        background-size: cover;
+        background-position: 376px;
     }
     main p {
         font-size: 18px;
